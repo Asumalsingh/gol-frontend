@@ -103,19 +103,16 @@ export default function Navbar() {
           {user ? (
             <span></span>
           ) : (
-            <ul className="lg:flex items-center">
-              <li className="capitalize mr-5 cursor-pointer text-primary-color">
-                <Link href="/login" onClick={() => setNav(false)}>
-                  Login
-                </Link>
-              </li>
-
-              <li className="capitalize cursor-pointer bg-primary-color text-white px-4 py-2 rounded-full">
-                <Link href="/signUp" onClick={() => setNav(false)}>
-                  Sign Up
-                </Link>
-              </li>
-            </ul>
+            <div className="flex  justify-center text-center">
+              <ul className="lg:flex items-center">
+                <li className="capitalize cursor-pointer text-primary-color">
+                  <Link href="/login">Login</Link>
+                </li>
+                <li className="capitalize cursor-pointer bg-primary-color text-white mt-3 px-4 py-2 rounded-full">
+                  <Link href="/signUp">Sign Up</Link>
+                </li>
+              </ul>
+            </div>
           )}
         </div>
       )}
