@@ -3,7 +3,7 @@ import React from "react";
 export default function FlightBooking() {
   return (
     <section className="bg-gradient-to-b">
-      <div className="max-w-screen-xl px-5 sm:px-0 mx-auto">
+      <div className="max-w-screen-xl px-5 mx-auto">
         <div className="card">
           <h2 className="font-semibold text-2xl">Where are you flying?</h2>
           <div className="flex flex-col sm:flex-row justify-between mt-4">

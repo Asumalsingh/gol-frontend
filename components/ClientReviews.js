@@ -53,7 +53,7 @@ export default function ClientReviews() {
   ];
   return (
     <section className="bg-gradient-to-b">
-      <div className="max-w-screen-xl px-5 sm:px-0 mx-auto mt-28">
+      <div className="max-w-screen-xl px-5 mx-auto mt-28">
         <div className="text-center text-3xl font-bold mb-16">
           <p>What Our Clients Says</p>
           <p>About Us</p>

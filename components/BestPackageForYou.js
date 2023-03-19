@@ -31,7 +31,7 @@ export default function BestPackageForYou() {
   ];
   return (
     <section className="bg-gradient-to-b">
-      <div className="max-w-screen-xl px-5 sm:px-0 mx-auto mt-28">
+      <div className="max-w-screen-xl px-5 mx-auto mt-28">
         <div className="text-center">
           <h2 className="font-bold text-2xl mb-2">Best Packages For You</h2>
           <p>
@@ -64,12 +64,14 @@ export default function BestPackageForYou() {
           {data.map((item, index) => {
             return (
               <div key={index} className="bg-white shadow-md rounded-md">
-                <Image
-                  src={item.image}
-                  alt="Image"
-                  className="rounded-t-md"
-                  width={500}
-                ></Image>
+                <div className="w-full">
+                  <Image
+                    src={item.image}
+                    alt="Image"
+                    className="rounded-t-md"
+                    width={2000}
+                  ></Image>
+                </div>
                 <div className="px-4">
                   <div className="flex justify-between my-2">
                     <div className="flex items-center text-lg font-semibold">

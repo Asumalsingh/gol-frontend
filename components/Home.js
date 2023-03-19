@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <section className="bg-gradient-to-b">
-        <div className="max-w-screen-xl px-5 sm:px-0 mx-auto">
+        <div className="max-w-screen-xl px-5 mx-auto">
           <div className="flex flex-col lg:flex-row justify-between">
             <div className="mt-32 sm:mt-40">
               <button className="bg-dark-light-blue z-50 cursor-pointer flex items-center text-xl px-4 py-2 rounded-3xl">

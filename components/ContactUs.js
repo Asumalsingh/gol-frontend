@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function ContactUs() {
   return (
     <section className="bg-gradient-to-b">
-      <div className="max-w-screen-xl px-5 sm:px-0 mx-auto mt-28">
+      <div className="max-w-screen-xl px-5 mx-auto mt-28">
         <div className="relative bg-cadetblue opacity-90 py-6 px-6 rounded-md">
           <div className="md:flex items-center">
             <div className="text-white md:w-1/2">

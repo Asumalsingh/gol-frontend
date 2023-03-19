@@ -15,7 +15,12 @@ export default function PackageLeft() {
       {/* Package overview */}
       <div className="my-10">
         <div className="w-full">
-          <Image src={PackageImage} alt="image" sizes="100%"></Image>
+          <Image
+            src={PackageImage}
+            alt="image"
+            width={2000}
+            sizes="100%"
+          ></Image>
         </div>
 
         <h1 className="font-semibold text-2xl my-4">Package Overview</h1>

@@ -17,7 +17,7 @@ export default function Footer() {
       className="mt-60"
       style={{ backgroundImage: `url('/assets/footer-image.png')` }}
     >
-      <div className="max-w-screen-xl relative px-5 sm:px-0 mx-auto pt-16 md:pt-52 pb-14">
+      <div className="max-w-screen-xl relative px-5  mx-auto pt-16 md:pt-52 pb-14">
         {/* Black box */}
         <div className="bg-black text-white flex justify-between items-center absolute -top-28 right-0 left-0 rounded-lg px-8 py-4 mx-5">
           <div>

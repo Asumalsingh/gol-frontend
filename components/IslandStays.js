@@ -52,7 +52,7 @@ export default function IslandStays() {
   ];
   return (
     <section className="bg-gradient-to-b">
-      <div className="max-w-screen-xl px-5 sm:px-0 mx-auto mt-28">
+      <div className="max-w-screen-xl px-5 mx-auto mt-28">
         <div className="text-center mb-16">
           <h2 className="font-bold text-2xl mb-2">Island Stays</h2>
           <p>
@@ -72,7 +72,7 @@ export default function IslandStays() {
                   src={item.image}
                   alt="Image"
                   className="rounded-t-md"
-                  width={500}
+                  width={2000}
                 ></Image>
                 <div className="px-4 py-4">
                   <div className="flex items-center text-lg font-semibold">
