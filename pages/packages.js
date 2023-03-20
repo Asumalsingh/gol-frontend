@@ -10,7 +10,7 @@ export default function Packages() {
       <PackagesTop />
       <section className="bg-gradient-to-b">
         <div className="max-w-screen-xl px-5 mx-auto mt-28">
-          <div className="grid grid-cols-1 md:grid-cols-3 md:gap-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 md:gap-28">
             <div className="col-span-2">
               <PackageLeft />
             </div>

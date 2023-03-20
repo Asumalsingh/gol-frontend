@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import mapImage from "../public/assets/map.png";
 import Girl from "../public/assets/illustration.png";
+import Link from "next/link";
 
 import { MdOutlineExplore } from "react-icons/md";
 
@@ -21,9 +22,12 @@ export default function Home() {
                 <p className=" text-sub-heading">Islands</p>
               </div>
 
-              <button className="border-2 rounded-md font-bold py-2 px-4 text-primary-color border-primary-color ">
+              <Link
+                href="/packages"
+                className="border-2 rounded-md font-bold py-2 px-4 text-primary-color border-primary-color "
+              >
                 Discover Now
-              </button>
+              </Link>
             </div>
             <div className="relative">
               <Image src={mapImage} alt="Map image"></Image>

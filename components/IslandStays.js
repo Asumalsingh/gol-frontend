@@ -4,6 +4,7 @@ import Photo2 from "../public/assets/home/photo-5.png";
 import Photo3 from "../public/assets/home/photo-6.png";
 import { MdLocationPin, MdStarRate } from "react-icons/md";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function IslandStays() {
   const data = [
@@ -98,9 +99,12 @@ export default function IslandStays() {
         </div>
 
         <div className="flex justify-center">
-          <button className="border-2 my-14 rounded-md font-bold py-2 px-4 text-primary-color border-primary-color ">
+          <Link
+            href="/packages"
+            className="border-2 my-14 rounded-md font-bold py-2 px-4 text-primary-color border-primary-color "
+          >
             Discover More
-          </button>
+          </Link>
         </div>
       </div>
     </section>

@@ -140,6 +140,16 @@ export default function Admin() {
                         <span className="font-semibold"> Role:</span>{" "}
                         {item.role}
                       </p>
+                      <p className="capitalize text-xs">
+                        <span className="font-semibold text-base"> Journey:</span> My
+                        progress was slow and steady because I was also
+                        improving other parts of my life that have helped me
+                        become a better person and ultimately a better
+                        developer. Now I am a Software Engineer working on a
+                        product that is helping people lives and I get to work
+                        with an amazing team. To wake up everyday knowing that I
+                        get to do what I love was worth the long journey.
+                      </p>
                     </div>
 
                     <select

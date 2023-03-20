@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import Photo1 from "../public/assets/home/photo-1.png";
 import Photo2 from "../public/assets/home/photo-2.png";
 import Photo3 from "../public/assets/home/photo-3.png";
 import Image from "next/image";
 import { MdLocationPin, MdStarRate } from "react-icons/md";
+import Link from "next/link";
 
 export default function BestPackageForYou() {
   const data = [
@@ -29,6 +30,10 @@ export default function BestPackageForYou() {
         "Explore the Beauty of the island for 3 days and 2 nights with our travel agency",
     },
   ];
+
+  const tabs = ["Maldives", "Samudram", "Cordelia", "Agatti", "More"];
+
+  const [activeTab, setActiveTab] = useState(0);
   return (
     <section className="bg-gradient-to-b">
       <div className="max-w-screen-xl px-5 mx-auto mt-28">
@@ -42,21 +47,21 @@ export default function BestPackageForYou() {
 
         {/* Tabs */}
         <div className="grid grid-cols-5 my-14 border-2 border-gray-300 divide-x-2 divide-gray-300 rounded-md font-semibold text-xs sm:text-base">
-          <div className="text-center rounded-l-md bg-primary-color text-white py-3 sm:py-4 cursor-pointer">
-            Maldives
-          </div>
-          <div className="text-center text-primary-color py-3 sm:py-4 cursor-pointer">
-            Samudram
-          </div>
-          <div className="text-center text-primary-color py-3 sm:py-4 cursor-pointer">
-            Cordelia
-          </div>
-          <div className="text-center text-primary-color py-3 sm:py-4 cursor-pointer">
-            Agatti
-          </div>
-          <div className="text-center text-primary-color py-3 sm:py-4 cursor-pointer">
-            More
-          </div>
+          {tabs.map((item, index) => {
+            return (
+              <button
+                key={index}
+                onClick={() => {
+                  setActiveTab(index);
+                }}
+                className={`text-center ${
+                  activeTab === index && "bg-primary-color text-white"
+                } text-primary-color py-3 sm:py-4 cursor-pointer`}
+              >
+                {item}
+              </button>
+            );
+          })}
         </div>
 
         {/* Places */}
@@ -85,7 +90,12 @@ export default function BestPackageForYou() {
                   </div>
                   <p>{item.description}</p>
                   <div className="flex justify-center my-5">
-                    <button className="px-4 py-2 ml-3 rounded-md bg-primary-color cursor-pointer hover:scale-110 duration-100 text-white">
+                    <button
+                      onClick={() => {
+                        alert("Successfully Booked!");
+                      }}
+                      className="px-4 py-2 ml-3 rounded-md bg-primary-color cursor-pointer hover:scale-110 duration-100 text-white"
+                    >
                       Book Now
                     </button>
                   </div>
@@ -96,9 +106,12 @@ export default function BestPackageForYou() {
         </div>
 
         <div className="flex justify-center">
-          <button className="border-2 my-14 rounded-md font-bold py-2 px-4 text-primary-color border-primary-color ">
+          <Link
+            href="/packages"
+            className="border-2 my-14 rounded-md font-bold py-2 px-4 text-primary-color border-primary-color "
+          >
             Discover More
-          </button>
+          </Link>
         </div>
       </div>
     </section>

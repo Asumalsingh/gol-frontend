@@ -20,7 +20,12 @@ export default function ContactUs() {
               <Image src={MapImage} alt="map image"></Image>
             </div>
           </div>
-          <button className="absolute bottom-8 right-1/2  md:right-0 md:bottom-1/2 px-5 py-2 mr-6 rounded-md bg-white font-semibold">
+          <button
+            onClick={() => {
+              alert("Thanks! for reaching out us");
+            }}
+            className="absolute bottom-8 right-1/2  md:right-0 md:bottom-1/2 px-5 py-2 mr-6 rounded-md bg-white font-semibold"
+          >
             Contact Us
           </button>
         </div>
