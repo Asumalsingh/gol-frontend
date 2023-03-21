@@ -33,7 +33,7 @@ export default function Navbar() {
 
           {user && user.isAdmin && (
             <li className="cursor-pointer hover:text-primary-color duration-100 mx-4">
-              <Link href="admin">Admin</Link>
+              <Link href="/admin/dashboard">Admin</Link>
             </li>
           )}
         </ul>
@@ -94,7 +94,7 @@ export default function Navbar() {
             })}
             {user && user.isAdmin && (
               <li className="cursor-pointer hover:text-primary-color duration-100 mx-4">
-                <Link href="admin" onClick={() => setNav(false)}>
+                <Link href="/admin/dashboard" onClick={() => setNav(false)}>
                   Admin
                 </Link>
               </li>
@@ -106,10 +106,14 @@ export default function Navbar() {
             <div className="flex  justify-center text-center">
               <ul className="lg:flex items-center">
                 <li className="capitalize cursor-pointer text-primary-color">
-                  <Link href="/login" onClick={() => setNav(false)}>Login</Link>
+                  <Link href="/login" onClick={() => setNav(false)}>
+                    Login
+                  </Link>
                 </li>
                 <li className="capitalize cursor-pointer bg-primary-color text-white mt-3 px-4 py-2 rounded-full">
-                  <Link href="/signUp" onClick={() => setNav(false)}>Sign Up</Link>
+                  <Link href="/signUp" onClick={() => setNav(false)}>
+                    Sign Up
+                  </Link>
                 </li>
               </ul>
             </div>
